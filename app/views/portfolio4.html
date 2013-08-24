@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <title>4 Column Portfolio Page</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/ajax-mail.js"></script>
+    <script type="text/javascript" src="js/accordion.settings.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- top menu -->
+<section id="top-menu">
+    <div class="container">
+        <div class="row">
+            <div class="span6 hidden-phone">
+                <ul class="top-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Shorcodes</a></li>
+                    <li><a href="#" class="last">Contact</a></li>
+                </ul>
+            </div>
+            <div class="span6">
+                <ul class="top-social">
+                    <li><a href="#" class="twitter2"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="google last"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span4 logo">
+                <a href="./index.html"><img src="images/logo.png" alt="logo"/></a>
+            </div>
+            <div class="span8 hidden-phone">
+                <a href="./index.html" class="alignright banner">
+                    <img src="images/banner-468-60.gif" alt="">
+                </a>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul class="clearfix">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Page</a>
+                    <ul>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li class="last"><a href="./services.html" >Our Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="./portfolio2.html" class="current">Portfolio</a>
+                    <ul>
+                        <li><a href="./portfolio2.html">Portfolio 2 col</a>
+                            <ul>
+                                <li><a href="./portfolio2.html">Portfolio 2 Columns</a></li>
+                                <li class="last"><a href="./portfolio2ex.html">Portfolio 2 Columns Extended</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./portfolio3.html">Portfolio 3 col</a>
+                            <ul>
+                                <li><a href="./portfolio3.html">Portfolio 3 Columns</a></li>
+                                <li class="last"><a href="./portfolio3ex.html">Portfolio 3 Columns Extended</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="./portfolio4.html">Portfolio 4 col</a>
+                            <ul>
+                                <li><a href="./portfolio4.html">Portfolio 4 Columns</a></li>
+                                <li class="last"><a href="./portfolio4ex.html">Portfolio 4 Columns Extended</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a>
+                    <ul>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li class="last"><a href="./blog-single.html">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--container-->
+<section id="container">
+    <div class="container">
+        <div class="title-divider">
+            <h3>Portfolio</h3>
+            <div class="divider-arrow"></div>
+        </div>
+        <!--filter-->
+        <ul id="filtrable">
+            <li class="current all"><a href="#">All</a></li>
+            <li class="html"><a href="#">Html</a></li>
+            <li class="css"><a href="#">CSS</a></li>
+            <li class="php"><a href="#">PHP</a></li>
+            <li class="javascript"><a href="#">JavaScript</a></li>
+        </ul>
+        <div class="clear"></div>
+        <section class="row portfolio filtrable clearfix">
+            <article data-id="id-1" data-type="javascript html" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest1.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article  data-id="id-2" data-type="php" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest2.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-3" data-type="javascript"  class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest3.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-4" data-type="php" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest4.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-5" data-type="javascript html" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest5.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-6" data-type="php" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest6.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-7" data-type="php" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest7.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-8" data-type="css" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest8.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-9" data-type="html" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest4.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-10" data-type="css" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest3.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-11" data-type="html" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest2.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article data-id="id-12" data-type="css" class="span3">
+                <div class="block-grey">
+                    <div class="block-light">
+                        <span class="portfolio-img">
+                            <span class="hover-span">
+                                <a href="example/view.jpg" class="p-view"  data-rel="prettyPhoto"></a>
+                                <a href="blog-single.html" class="p-link"></a>
+                            </span>
+                            <img src="example/latest1.jpg" alt="photo"/>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--pagination-->
+        <div class="pagination pagination-centered">
+            <ul>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h3>Flickr Photos</h3>
+                <ul class="flickr clearfix"></ul>
+            </div>
+            <div class="span4">
+                <h3>Last Tweet</h3>
+                <div class="twitter"></div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        //twitter
+                        $(".twitter").tweet({
+                            join_text: "auto",
+                            username: "twitter",
+                            avatar_size: 40,
+                            count: 3,
+                            auto_join_text_default: "we said,",
+                            auto_join_text_ed: "we",
+                            auto_join_text_ing: "we were",
+                            auto_join_text_reply: "we replied",
+                            auto_join_text_url: "we were checking out",
+                            loading_text: "loading tweets..."
+                        });
+                    });
+                </script>
+            </div>
+            <div class="span4">
+                <h3>Contact Form</h3>
+                <form id="contact" class="form-horizontal" method="post">
+                    <div class="controls">
+                        <input type="text" id="inputName" placeholder="Name" name="inputName">
+                        <label class="ferror" for="inputName" id="fname_error">Name is required.</label>
+                    </div>
+                    <div class="controls">
+                        <input type="text" id="inputEmail" placeholder="Email" name="inputEmail">
+                        <label class="ferror" for="inputEmail" id="femail_error">Email is required.</label>
+                    </div>
+                    <div class="controls">
+                        <textarea rows="3" id="inputMessage" placeholder="Message" name="inputMessage"></textarea>
+                        <label class="ferror" for="inputMessage" id="fmessage_error">Message is required.</label>
+                    </div>
+                    <div class="controls">
+                        <input type="submit" class="btn btn-success btn-large footer-button" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--footer menu-->
+<section id="footer-menu">
+    <div class="container">
+        <div class="row">
+            <p class="span12"><span>&copy; Copyright 2012, <span class="color2">CITYpress</span> | All Rights Reserved</span></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
