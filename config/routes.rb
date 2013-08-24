@@ -1,10 +1,30 @@
 Neighborhoodscms::Application.routes.draw do
 
+  get "city/index"
+
+  get "city/about"
+
+  get "city/blog"
+
+  get "city/contact"
+
+  get "city/portfolio2"
+
+  get "city/portfolio2ex"
+
+  get "city/portfolio3"
+
+  get "city/portfolio3ex"
+
+  get "city/portfolio4"
+
+  get "city/portfolio4ex"
+
+  get "city/services"
+  
+  get "city/blog_single"
+
   resources :neighborhoods
-
-
-  resources :neighborhooods
-
 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
