@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["flexslider","rails","engine"],"longSearchIndex":["flexslider","flexslider::rails","flexslider::rails::engine"],"info":[["Flexslider","","Flexslider.html","",""],["Flexslider::Rails","","Flexslider/Rails.html","",""],["Flexslider::Rails::Engine","","Flexslider/Rails/Engine.html","",""]]}}
