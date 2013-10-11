@@ -1,38 +1,24 @@
 Neighborhoodscms::Application.routes.draw do
-
-  get "city/index"
-
-  get "city/about"
-
-  get "city/blog"
-
-  get "city/contact"
-
-  get "city/portfolio2"
-
-  get "city/portfolio2ex"
-
-  get "city/portfolio3"
-
-  get "city/portfolio3ex"
-
-  get "city/portfolio4"
-
-  get "city/portfolio4ex"
-
-  get "city/services"
   
-  get "city/blog_single"
+  get "errors/not_found"
 
-  resources :neighborhoods
+  match "/about_us" => "pages#about_us"
+  match "/blog" => "pages#blog"
+  match "/contact" => "pages#contact"
+  match "/elements" => "pages#elements"
+  match "/gallery" => "pages#gallery"
+  match "/home_alternative" => "pages#home_alternative"
+  match "/page_alternative" => "pages#page_alternative"
+  match "/portfolio" => "pages#portfolio"
+  match "/portfolio_item" => "pages#portfolio_item"
+  match "/portfolio_item_2" => "pages#portfolio_item_2"
+  match "/services" => "pages#services"
+  match "/single_post" => "pages#single_post"
+  match "/register" => "pages#register"
 
-  # This line mounts Refinery's routes at the root of your application.
-  # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
-  # If you would like to change where this extension is mounted, simply change the :at option to something different.
-  #
-  # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
-  mount Refinery::Core::Engine, :at => '/'
+  match "/404" => "errors#not_found", as: "error_404"
 
+  root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
