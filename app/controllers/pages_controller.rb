@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def about_us
+  def about_us  
   end
 
   def blog

@@ -17,7 +17,10 @@ Neighborhoodscms::Application.routes.draw do
   match "/register" => "pages#register"
 
   match "/404" => "errors#not_found", as: "error_404"
-
+  
+  
+  match "/:city" => "home#city"
+  
   root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.

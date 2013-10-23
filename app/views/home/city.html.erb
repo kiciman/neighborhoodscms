@@ -1,0 +1,33 @@
+<% content_for(:title) { "Portfolio" } %>
+
+<div class="hgroup">
+  <h1><%=@city_name%></h1>
+
+  <h2><%=@city_description%></h2>
+  <ul class="breadcrumb pull-right">
+    <li><a href="<%= root_path %>">Home</a> <span class="divider">/</span></li>
+    <li class="active">Portfolio</li>
+  </ul>
+</div>
+<ul id="portfolio_filters">
+  <li><a href="#" data-filter="*">show all</a></li>
+  <%@neighborhood_list.each{|n|%>
+    <li><a href="/<%=n.name.gsub(" ", "_")%>"><%=n.name%></a></li>
+  <%}%>
+</ul>
+
+
+<% content_for :neighborhood_list do %>
+  <h2>All Neighborhoods</h2>
+  
+  <div class="container">
+    <div class="row">
+      <div class="span4 footer_teaser">
+      </div>
+      <div class="span4 footer_teaser">
+      </div>
+      <div class="span4 footer_teaser">
+      </div>
+    </div>
+  </div>
+<% end %>
